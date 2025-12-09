@@ -1,4 +1,4 @@
-name: Deploy HTML to S3 Dev
+name: Deploy HTML to S3 Prd
 on:
   workflow_dispatch:
     branches:
