@@ -19,8 +19,10 @@ jobs:
 
       - name: Sync HTML files to S3
         run: |
-          aws s3 sync .. s3://${{ vars.S3_BUCKET_NAME_DEV}} --delete
+          pwd
+          ls -lrt
+          aws s3 sync . s3://${{ vars.S3_BUCKET_NAME_DEV}} --delete
       - name: Make index.html publicly readable
-      
+
         run: |
           aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key index.html --acl public-read
