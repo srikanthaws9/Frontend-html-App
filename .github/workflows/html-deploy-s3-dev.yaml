@@ -26,3 +26,9 @@ jobs:
 
         run: |
           aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key index.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage1.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage2.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage3.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage4.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage5.html --acl public-read
+          aws s3api put-object-acl --bucket ${{ vars.S3_BUCKET_NAME_DEV}} --key ./pages/subpage6.html --acl public-read
