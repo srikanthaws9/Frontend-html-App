@@ -2,8 +2,39 @@
 <html>
 <body>
 
-<h2>Welcome to Dinesh' MLOps Library</h2>
-<img src="MLOps.png" alt="Trulli" width="500" height="333">
+<h2>This Page is for learning the GITHUB commands</h2>
+<img src="./images/git.png" alt="Git Logo" width="100" height="100">
+<h1>Below are useful git commands</h1>
+<b>Setting Up and Cloning Repositories:</b>
+<table border="1">
+<tr><td><b>command</b></td><td><b>use of the command</b></td></tr></tr>    
+<tr><td>git init</td><td>Initializes a new Git repository in the current directory.</td></tr>
+<tr><td>git clone *repository-url*</td><td>Creates a local copy of a remote Git repository.</td></tr>
+<tr><td>git config --global user.name "Your Name"</td><td>Sets your global Git username.</td></tr>
+<tr><td>git config --global user.email "your.email@example.com"</td><td>Sets your global Git email address.</td></tr>
+</table>
+<br></br>
+<br><b>Managing Changes:</b></br>
+<table border="1">
+<tr><td><b>command</b></td><td><b>use of the command</b></td></tr></tr>    
+<tr><td>git status</td><td>Shows the current state of the working directory and staging area, including modified, staged, and untracked files.</td></tr>
+<tr><td>git add *file*</td><td> Stages changes in a specific file for the next commit.</td></tr>
+<tr><td>git add .</td><td>Stages all changes in the current directory.</td></tr>
+<tr><td>git commit -m "Your commit message"</td><td>Records staged changes to the local repository with a descriptive message. </td></tr>
+<tr><td>git diff</td><td>Shows changes between the working directory and the staging area, or between commits</td></tr>
+</table>
 
+<br></br>
+<br><b> Branching and Merging:</b></br>
+<table border="1">
+<tr><td><b>command</b></td><td><b>use of the command</b></td></tr></tr>    
+<tr><td>git branch</td><td>Lists all local branches</td></tr>
+<tr><td>git branch *branch-name*</td><td> Creates a new branch</td></tr>
+<tr><td>git checkout *branch-name* or git switch</td><td>Switches to a different branch.</td></tr>
+<tr><td>git checkout -b *new-branch-name* or git -c switch</td><td>Creates a new branch and switches to it.</td></tr>
+<tr><td>git merge *branch-to-merge*</td><td>Merges changes from one branch into the current branch</td></tr>
+<tr><td>git branch -d *branch-name*</td><td>Deletes a local branch (only if merged).</td></tr>
+<tr><td>git branch -D *branch-name*</td><td>Forcefully deletes a local branch</td></tr>
+</table>
 </body>
 </html>
